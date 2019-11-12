@@ -1,65 +1,35 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>
-            Contact form
-        </title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        body {font-family: Arial, Helvetica, sans-serif;}
-        * {box-sizing: border-box;}
-
-        input[type=text], select, textarea {
-        width: 100%;
-        padding: 12px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-        margin-top: 6px;
-        margin-bottom: 16px;
-        resize: vertical;
-        }
-
-        .submit {
-        background-color: #4CAF50;
-        color: white;
-        padding: 12px 20px;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        }
-
-        .submit:hover {
-        background-color: rgb(255, 98, 98);
-        }
-
-        .container {
-        border-radius: 5px;
-        background-color: #f2f2f2;
-        padding: 20px;
-        }
-    </style>
+        <title>Contact Form</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Cooper Featherstones Contact Page">
+        <meta name="keywords" content="Cooper, Featherstone, contact, page ">
+        <meta name="author" content="Cooper Featherstone">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
 
         <h3>Contact Form</h3>
 
         <div class="container">
-        <form action="contact.php" method="post">
-            <label>Name</label>
-            <input type="text"  name="name" placeholder="Your name..">
+            <form action="https://formspree.io/xgeekbol" method="POST">
+                <label>Name</label>
+                <input type="text"  name="name" placeholder="Your name..">
 
-            <label>Email</label>
-            <input type="text" name="email" placeholder="Your email..">
+                <label>Email</label>
+                <input type="text" name="email" placeholder="Your email..">
 
-            <label>Subject</label>
-            <input type="text" name="subject" placeholder="Your subject..">
+                <label>Subject</label>
+                <input type="text" name="subject" placeholder="Your subject..">
 
-            <label>Message</label>
-            <textarea name="message" placeholder="Write something.." style="height:200px"></textarea>
+                <label>Message</label>
+                <textarea name="message" placeholder="Write something.." style="height:200px"></textarea>
 
-            <button class="submit" type="submit" name="submit">SEND</button>
-        </form>
+                <button class="submit" type="submit" name="submit">SEND</button>
+            </form>
         </div>
+
     </body>
 </html>
